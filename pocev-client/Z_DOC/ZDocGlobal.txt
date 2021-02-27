@@ -1,0 +1,4 @@
+- NPM is a package manager, you can install node.js packages using NPM
+
+- NPX is a tool to execute node.js packages.
+

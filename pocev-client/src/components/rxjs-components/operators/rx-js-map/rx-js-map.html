@@ -1,0 +1,56 @@
+<div>
+  <div class="rx-container">
+    <div class="obs-input">
+      <div class="obs-input__text">
+        <label class="obs-input__text-label">Observable input</label>
+        <input
+          v-model="textInput"
+          type="text"
+          class="form-control"
+          id="obs-text"
+          placeholder="tap here to create observable entries"
+        />
+      </div>
+      <div class="obs-input__radio-group">
+        <el-radio-group v-model="labelRadio" @change="changeOperator">
+          <el-radio :label="map">Map</el-radio>
+          <el-radio :label="mergemap">Merge Map</el-radio>
+          <el-radio :label="concatmap">Concat Map</el-radio>
+          <el-radio :label="exhaustMap">Exhaust Map</el-radio>
+          <el-radio :label="switchMap">Switch Map</el-radio>
+        </el-radio-group>
+      </div>
+      <div class="obs-input__btn">
+        <button type="button" @click="clear()" class="btn btn-primary btn-go">
+          Clear
+        </button>
+      </div>
+    </div>
+    <div class="result-texts">
+      <div class="result">
+        <h5>Map</h5>
+        <div class="result-content">
+          {{ resutMapConsole }}
+        </div>
+      </div>
+      <div class="result">
+        <h5>ConcatMap</h5>
+        <div class="result-content">{{ resutMergeConcatConsole }}</div>
+      </div>
+      <div class="result">
+        <h5>MergeMap</h5>
+        <div class="result-content">
+          {{ resutMergeMapConsole }}
+        </div>
+      </div>
+      <div class="result">
+        <h5>SwitchMap</h5>
+        <div class="result-content">{{ resultSwitchMapConsole }}</div>
+      </div>
+      <div class="result">
+        <h5>ExaustMap</h5>
+        <div class="result-content">{{ resutExaustConcatConsole }}</div>
+      </div>
+    </div>
+  </div>
+</div>

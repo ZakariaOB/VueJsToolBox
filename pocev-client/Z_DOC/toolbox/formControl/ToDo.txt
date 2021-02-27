@@ -1,0 +1,2 @@
+- Check the usage of decoractors
+- Check the usage of types , Ex : type.d.ts

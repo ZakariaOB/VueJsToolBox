@@ -1,0 +1,7 @@
+- To check why bootsratp and jquery are working on Certiiq without a direct reference inside
+  index.cshtml page .
+
+- Issue with the source map to debug the code
+- the first time on loading the collapsing it's not OK => It will trigger the event twice
+
+- https://stackoverflow.com/questions/59281901/api-json-response-to-c-sharp-object-with-capital-case-properties-first-letter

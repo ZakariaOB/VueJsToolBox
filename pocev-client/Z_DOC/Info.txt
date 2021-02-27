@@ -1,0 +1,20 @@
+- panel-group : panel-group class clears the bottom-margin.
+- It's possibele to implement the collapsible only using checkboxes and the trick of changing it's style
+     => Check the collapsible checkbox
+
+- data-toggle , data-target is a bootstrap thing
+  => data-target is used by bootstrap to make your life easier.
+    You (mostly) do not need to write a single line of Javascript to use their pre-made JavaScript components.
+  => The data-toggle: collapse is an example
+
+  ---------------------------------------
+  Ev collapsible features
+  ---------------------------------------
+
+- It uses bootsrap collapse functionnalty : data-target, data-toggle
+- It offers the possibility to subscribe to different events :
+   > show
+   > hide
+   > shown
+   > hidden
+- => To verify : aria-hidden and other etc ..

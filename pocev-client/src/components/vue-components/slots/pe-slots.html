@@ -1,0 +1,26 @@
+<div class="row slots">
+  <div class="segment">
+    <user-example v-slot="props"> {{ props.user.firstName }}</user-example>
+  </div>
+  <div class="segment">
+    <user-example
+      ><template #test-named> SLOT SYNTAX</template>
+    </user-example>
+  </div>
+  <div class="segment">
+    <h1>TODO List scoped</h1>
+    <todo-scoped :todo-list="todoList">
+      <template #op>
+        <h4>OUSSAMA</h4>
+      </template>
+      <template #todo="{ model }">
+        Completed : <span v-if="model.isComplete">✓</span><span v-else>/\</span>
+        <div class="detail">
+          <div># {{ model.isComplete ? 'COMPLETE' : 'UNCOMPLETE'}}</div>
+          <div># {{ model.text }}</div>
+          <div># {{ model.id }}</div>
+        </div>
+      </template>
+    </todo-scoped>
+  </div>
+</div>

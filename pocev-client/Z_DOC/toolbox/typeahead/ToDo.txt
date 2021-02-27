@@ -1,0 +1,21 @@
+How to ?:
+
+- Use ElSelect
+- onRemote function
+- Passing the callback to the typeahead
+- view model
+
+
+
+
+
+-------------------------------------------
+
+- Check the typeahead of element
+- Figure out the elements to adapt for your new custom component
+- Build the ev-typeahead
+- Use it wit examples
+
+-------------------------------------------
+-------------------------------------------
+- Create a simple usuable typeahead

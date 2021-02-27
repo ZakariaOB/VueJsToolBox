@@ -1,0 +1,104 @@
+<div class="el-examples">
+  <collapsing
+    collapsed="false"
+    class="collapsible"
+    title="El select (Typeeahead)"
+  >
+    <template>
+      <el-select
+        v-model="value"
+        multiple
+        filterable
+        clearable
+        remote
+        reserve-keyword
+        placeholder="Please enter a keyword"
+        :remote-method="remoteMethod"
+        :loading="loading"
+        loading-text="Loading"
+        no-match-text="No match text"
+        no-data-text="No data text"
+      >
+        <el-option
+          v-for="item in options"
+          :key="item.value"
+          :label="item.label"
+          :value="item.value"
+        >
+        </el-option>
+        <template #empty v-if="!loading && $scopedSlots.empty">
+          <p class="el-select-dropdown__empty">
+            <!--<slot name="empty" :query="query"> </slot>-->
+            LOADING
+          </p>
+        </template>
+      </el-select>
+    </template>
+  </collapsing>
+  <collapsing collapsed="false" class="collapsible" title="El buttons">
+    <div>
+      <el-button type="primary" icon="el-icon-edit"></el-button>
+      <el-button type="primary" icon="el-icon-share"></el-button>
+      <el-button type="primary" icon="el-icon-delete"></el-button>
+      <el-button type="primary" icon="el-icon-search">Search</el-button>
+      <el-button type="primary"
+        >Upload<i class="el-icon-upload el-icon-right"></i
+      ></el-button>
+    </div>
+  </collapsing>
+  <collapsing collapsed="false" class="collapsible" title="El radio">
+    <div>
+      <div class="radio-examples">
+        <el-radio label="1">Option A</el-radio>
+        <el-radio label="2">Option B</el-radio>
+      </div>
+    </div>
+  </collapsing>
+  <collapsing collapsed="false" class="collapsible" title="Check box groups">
+    <div>
+      <template>
+        <div>
+          <el-checkbox-group v-model="checkboxGroup1">
+            <el-checkbox-button
+              v-for="city in cities"
+              :label="city"
+              :key="city"
+              >{{ city }}</el-checkbox-button
+            >
+          </el-checkbox-group>
+        </div>
+        <div style="margin-top: 20px">
+          <el-checkbox-group v-model="checkboxGroup2" size="medium">
+            <el-checkbox-button
+              v-for="city in cities"
+              :label="city"
+              :key="city"
+              >{{ city }}</el-checkbox-button
+            >
+          </el-checkbox-group>
+        </div>
+        <div style="margin-top: 20px">
+          <el-checkbox-group v-model="checkboxGroup3" size="small">
+            <el-checkbox-button
+              v-for="city in cities"
+              :label="city"
+              :disabled="city === 'Beijing'"
+              :key="city"
+              >{{ city }}</el-checkbox-button
+            >
+          </el-checkbox-group>
+        </div>
+        <div style="margin-top: 20px">
+          <el-checkbox-group v-model="checkboxGroup4" size="mini" disabled>
+            <el-checkbox-button
+              v-for="city in cities"
+              :label="city"
+              :key="city"
+              >{{ city }}</el-checkbox-button
+            >
+          </el-checkbox-group>
+        </div>
+      </template>
+    </div>
+  </collapsing>
+</div>

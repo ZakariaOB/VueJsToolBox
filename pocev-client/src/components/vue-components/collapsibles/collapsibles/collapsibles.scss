@@ -1,0 +1,38 @@
+.collapisble-chk {
+  margin: 20px;
+}
+
+.collapsible-ev {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+
+  &-one {
+    flex: 1;
+    margin-right: 10px;
+  }
+
+  &-two {
+    flex: 1;
+    margin-left: 10px;
+  }
+
+  .summary-line {
+    display: flex;
+    align-items: center;
+    &-name {
+      margin-right: 10px;
+    }
+    &-date {
+      font-weight: 900;
+      margin-right: auto;
+    }
+    &-value {
+      border: 1px solid white;
+      border-radius: 80%;
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+  }
+}

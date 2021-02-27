@@ -1,0 +1,7 @@
+- Why linked lists ?
+  => Insert , delete are easier than arrays
+
+- Great tool : visualgo.net
+
+- Don't forget the edge cases : Like the insert for linkedlist
+  (You forget the cases for invalid indexes or indexes that are greater than the list size)

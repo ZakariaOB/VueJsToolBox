@@ -1,0 +1,13 @@
+.create-container {
+    display: flex;
+    justify-content: center;
+    .beginner-course {
+        flex: 1;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .advanced-course {
+        flex: 1;
+        margin-right: 10px;
+    }
+}

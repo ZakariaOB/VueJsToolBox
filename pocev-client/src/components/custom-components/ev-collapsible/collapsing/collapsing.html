@@ -1,0 +1,33 @@
+<div class="collapsing-root panel-group">
+  <div class="collapsing-panel">
+      <div
+          ref="header"
+          class="collapsing-heading"
+          :class="{'is-collapsed': isCollapsed, small: small}"
+          role="tab"
+          :id="collapseHeaderId"
+          data-toggle="collapse"
+          aria-expanded="true"
+          :data-target="collapseContentSelector"
+      >
+          <span class="header">
+              <slot name="header">
+                  {{ title }}
+              </slot>
+          </span>
+          <span class="collapse-icon" :class="{ collapsed: isHide }">
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+          </span>
+      </div>
+      <div
+          :id="collapseContentId"
+          class="collapsing-content collapse"
+          role="tabpanel"
+          :aria-labelledby="collapseHeaderId"
+      >
+          <div class="collapsing-body" :class="{small: small}">
+              <slot></slot>
+          </div>
+      </div>
+  </div>
+</div>

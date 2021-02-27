@@ -1,0 +1,37 @@
+<div class="wrapper">
+  <div class="sidebar">
+    <h2>Lea List</h2>
+    <ul>
+      <li
+        v-for="(item, index) in menuItems"
+        @click="onMenuItemClick(item, index)"
+        :class="{ 'active': menuActiveIndex === index }"
+      >
+        {{ item.title}}
+      </li>
+    </ul>
+  </div>
+  <div class="main_content" v-show="isMenuVueActive">
+    <div class="row">
+      <div v-for="item in activeMenuItem.subItems" class="col-sm-2 ">
+        <div class="card cardsp">
+          <div class="card-body">
+            <h5 class="card-title">{{ item.title }}</h5>
+            <p class="card-text">{{ item.description }}</p>
+          </div>
+          <button
+            class="btn btn-primary btn-go"
+            @click="onSubMenuItemClick(item)"
+          >
+            Check
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main_content" v-show="!isMenuVueActive">
+    <keep-alive>
+      <component v-bind:is="currentComponent"></component>
+    </keep-alive>
+  </div>
+</div>

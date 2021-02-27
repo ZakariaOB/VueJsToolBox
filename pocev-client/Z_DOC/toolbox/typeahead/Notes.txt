@@ -1,0 +1,30 @@
+- The sgs-typeahead improvements
+   > Using naming slots for clarity and avoid abbrevaiation ambiguity
+   > Using a function to generates unique keys instead of the hashcode => Not done for this
+
+
+- Scoped slots with my own words
+> Giving the parent element the possiblity to shape the rendering of a components that uses scope
+  by passing some properties that could be at the rendering phase used to generate a custom template
+  for each parent . The abbreviation are quite confusing , always check the official docs until you
+  master that .
+
+- I will need to analyze the history of the component to be able to recreate it gradually
+  while understanding the different issues resolved on each period of time .
+
+- Recheck the lazy call from the parent to the typeahead =>> !!!!!
+
+
+> Another big point used that never hear off which is partial functions in javascript
+     => https://javascript.info/bind
+
+> The very beautiful idea behind using the bind to the LazyFunction is to use partial methods in order to
+  pass to the parent a partial param that will be initialized on the child , and then the parent will give back
+  the info to the child => JUST beautiful
+
+> We can communicate between parent and child using events that passes callbacks => SGSTYPEAHEAD
+
+> Ref can work by passing req id and pass it back to the child , but the compnent will in this case contain
+  lot of info about the child and prone to erros => Not that independant
+
+> Elegant way done on sgs typeahead

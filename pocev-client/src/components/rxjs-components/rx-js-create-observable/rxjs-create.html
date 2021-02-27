@@ -1,0 +1,12 @@
+<div class="create-container">
+  <ev-collapsible class="beginner-course" title="Beginner">
+    <div v-for="item in beginnerCourses" class="coureses">
+      {{ item.name }} | {{ item.description }}
+    </div>
+  </ev-collapsible>
+  <ev-collapsible title="Advanced" class="advanced-course">
+    <div v-for="item in advancedCourses" class="coureses">
+      {{ item.name }} | {{ item.description }}
+    </div>
+  </ev-collapsible>
+</div>

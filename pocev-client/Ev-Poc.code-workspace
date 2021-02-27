@@ -1,0 +1,84 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.trimFinalNewlines": true,
+        "files.trimTrailingWhitespace": true,
+        "files.exclude": {
+            "node_modules": true
+        },
+        "tslint.configFile": "./tslint.json",
+        "editor.tabSize": 4,
+        "editor.wordWrapColumn": 120,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        },
+        "typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+        "scssFormatter.printWidth": 120,
+        "scssFormatter.tabWidth": 4,
+        "scssFormatter.singleQuote": true,
+        "typescript.updateImportsOnFileMove.enabled": "always",
+        "typescript.preferences.quoteStyle": "single",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "[html]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[typescript]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[jsonc]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[scss]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[json]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "typescript.tsdk": "node_modules\\typescript\\lib"
+    },
+    "extensions": {
+        "recommendations": [
+            "jondot.vscode-hygen",
+            "sibiraj-s.vscode-scss-formatter",
+            "esbenp.prettier-vscode",
+            "ms-vscode.vscode-typescript-tslint-plugin",
+            "tyriar.sort-lines"
+        ]
+    },
+    "launch": {
+        "configurations": [
+            {
+                "type": "node",
+                "request": "launch",
+                "name": "Jest All",
+                "program": "${workspaceFolder}/node_modules/.bin/jest",
+                "args": ["--runInBand"],
+                "console": "integratedTerminal",
+                "internalConsoleOptions": "neverOpen",
+                "disableOptimisticBPs": true,
+                "windows": {
+                    "program": "${workspaceFolder}/node_modules/jest/bin/jest"
+                }
+            },
+            {
+                "type": "node",
+                "request": "launch",
+                "name": "Jest Current File",
+                "program": "${workspaceFolder}/node_modules/.bin/jest",
+                "args": ["${fileBasenameNoExtension}", "--config", "jest.config.js"],
+                "console": "integratedTerminal",
+                "internalConsoleOptions": "neverOpen",
+                "disableOptimisticBPs": true,
+                "windows": {
+                    "program": "${workspaceFolder}/node_modules/jest/bin/jest"
+                }
+            }
+        ],
+        "compounds": []
+    }
+}

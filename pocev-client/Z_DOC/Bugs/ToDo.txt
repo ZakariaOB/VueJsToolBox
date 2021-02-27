@@ -1,0 +1,7 @@
+- Collapsible issue check why the prop is not working : collapsed or not
+
+- Source map issue
+
+- Imports issue : Why it alawys require .vue ???
+
+- Elements UI icons are not working correctly

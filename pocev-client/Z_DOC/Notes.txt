@@ -1,0 +1,34 @@
+- To install elements : npm i element-ui -S
+- You can change the general options : font-size, font-color
+- CHECK WHY YOU SHOULD ALWYAS ADD .vue TO THE IMPORTS
+    import  EvCollapsibleChk
+          from '@/components/custom-components/ev-collapsible-chk/ev-collapsible-chk.vue';
+ => !!!!!!!!!!!!! Compare the imports bewteen your project and Everest => WEIRD !!!!!!!!!!!!!!!!!!
+
+- To use jquery with typescript => npm install --save-dev @types/jquery
+
+- The issue with the collapsible component was an initial class to put as : 'collapse' (Bootsrap thing propbably)
+  Another think to verify later is with @Watch . Apperently the @Watch is not working on the init of the components
+  as I had the impression . But it will listen to the change of the prop coming from other components .
+  => TO CHECK IN AN EXAMPLE
+
+- Smart selection : You are looking for Shrink/Expand Selection.
+    Trigger it with Shift+Alt+Left and Shift + Alt+Right
+    Update:
+    This is now called Smart select API. This feature uses
+    semantic knowledge to intelligently expand selections for expressions, types,
+    statements, classes, and imports.
+
+- From directives used for form group build
+    - When clicking on a button, execute the first event handler,
+      and stop the rest of the event handlers from being executed .
+    - The Event interface's preventDefault() method tells the user agent that if the event does not get explicitly handled,
+      its default action should not be taken as it normally would be
+    - Propagation as an example is a button handling multiple clic events
+        > var x = document.getElementById("myBtn");
+          x.addEventListener("click", myFunction);
+          x.addEventListener("click", someOtherFunction);
+
+- Blur means simply loosing focus .
+- The blur event fires when an element has lost focus. The main difference between this event
+  and focusout is that focusout bubbles while blur does not.

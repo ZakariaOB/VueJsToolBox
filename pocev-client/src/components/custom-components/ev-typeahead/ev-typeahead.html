@@ -1,0 +1,23 @@
+<el-select
+    v-model="model"
+    multiple
+    filterable
+    clearable
+    remote
+    reserve-keyword
+    placeholder="Please enter a keyword"
+    :remote-method="onLoadData"
+    @change="onSelection"
+    :loading="loading"
+    loading-text="Loading"
+    no-match-text="No match text"
+    no-data-text="No data text"
+>
+    <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value"> </el-option>
+    <template #empty v-if="!loading && $scopedSlots.empty">
+        <p class="el-select-dropdown__empty">
+            <!--<slot name="empty" :query="query"> </slot>-->
+            LOADING DATA
+        </p>
+    </template>
+</el-select>

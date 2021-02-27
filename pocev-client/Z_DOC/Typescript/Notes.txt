@@ -1,0 +1,29 @@
+- In Typescript, a custom object type can also implement an Interface!
+
+- In the current version of Typescript, the type system is said to be based
+  on structural subtyping. What does this mean?
+  It means that what defines a type is not so much its name (like nominal
+  type systems that are common in other languages). Instead, what
+  defines a type is a collection of specific properties and their types.
+  For example what defines the type of the Course custom type is its list
+  of properties, and not its name.
+
+- so : user = {} and user.name = ? will not work as the type inferred in this case
+  will not contain a defintion for the name property .
+
+- So annotating a variable with type Any is essentially telling the compiler
+  to bypass the type system, and in general not check type compatibility
+  for this variable.
+
+- Another way of fixing this type of errors is to mark variables as optional,
+  for example by annotating variables with a question mark .
+
+- Everything is based on type inference as much as possible, although
+  there are places like function arguments where we need to add type
+  annotation if setting noImplicityAny to true, because there is no way
+  for the compiler to infer those types.
+
+- The type system is built in a way that most of the error messages we get
+  are actually errors that we would want to fix.
+
+- Check the usage of @types in typescript and the typescript type system .

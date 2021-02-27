@@ -1,0 +1,56 @@
+@import '../../../../vars';
+
+.rx-container {
+  margin-top: 10px;
+}
+
+.result-texts {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  .result {
+    display: flex;
+    flex-direction: column;
+    .result-content {
+      min-width: 200px;
+      margin: 0 auto;
+      background-color: whitesmoke;
+      white-space: pre;
+      border: 2px solid $color-primary;
+      min-height: 600px;
+    }
+  }
+}
+
+.obs-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+  border: 2px solid $color-primary;
+  padding: 10px;
+  margin-bottom: 35px;
+  &__text {
+    flex: 3;
+    display: flex;
+    width: 500px;
+    align-items: center;
+    &-label {
+      width: 200px;
+      font-weight: 900;
+      margin-right: 5px;
+    }
+  }
+  &__radio-group {
+    flex: 4;
+  }
+  &__btn {
+    flex: 1;
+  }
+}
+
+.btn-go {
+  background-color: $color-primary;
+  border-color: $color-primary;
+  font-family: inherit;
+}

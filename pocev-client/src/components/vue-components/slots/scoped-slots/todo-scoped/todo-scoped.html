@@ -1,0 +1,10 @@
+<div class="todos">
+  <ul>
+    <li v-for="item in todoList" :key="item.id">
+      <slot name="op">Header</slot>
+      <slot name="todo" :model="item">
+        {{ item.text }}
+      </slot>
+    </li>
+  </ul>
+</div>

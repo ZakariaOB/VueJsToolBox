@@ -1,0 +1,10 @@
+.el-examples {
+  .collapsible {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}

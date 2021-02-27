@@ -1,0 +1,14 @@
+
+- Need to undesrtandthe usage of vue directives with an example
+
+- Need to learn about tpescript decoractors and their usage for a custom directive decorator
+
+- The claim was that decorators are not instance-targeted and only called once per class and usage.
+
+- Document VueJs $attr and also check the bind keyword usages
+    => https://stackoverflow.com/questions/2236747/what-is-the-use-of-the-javascript-bind-method
+
+- After understanding bind keyword and how directives work check also decorators
+
+- Then you are able to fully understand The Directive decorator used and will be possible to continue learning the form
+  module .

@@ -1,0 +1,42 @@
+{
+    "defaultSeverity": "off",
+    "extends": ["tslint:recommended"],
+    "linterOptions": {
+        "exclude": ["node_modules/**"]
+    },
+    "rules": {
+        "quotemark": [true, "single"],
+        "indent": [true, "spaces", 4],
+        "interface-name": false,
+        "ordered-imports": false,
+        "only-arrow-functions": false,
+        "object-literal-sort-keys": false,
+        "no-angle-bracket-type-assertion": false,
+        "no-object-literal-type-assertion": false,
+        "no-consecutive-blank-lines": false,
+        "typedef": [true, "call-signature", "parameter", "property-declaration", "member-variable-declaration"],
+        "array-type": [true, "array"],
+        "whitespace": [false, "check-typecast"],
+        "@typescript-eslint/no-inferrable-types": [
+            2,
+            {
+                "ignoreParameters": true
+            }
+        ],
+        "max-line-length": [
+            true,
+            {
+                "limit": 120,
+                "ignore-pattern": "^import |^export {(.*?)}|//\\s*(TODO|FIXME)"
+            }
+        ],
+        "member-access": false,
+        "trailing-comma": [
+            true,
+            {
+                "singleline": "never",
+                "multiline": "never"
+            }
+        ]
+    }
+}

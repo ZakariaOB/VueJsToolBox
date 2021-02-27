@@ -1,0 +1,15 @@
+<div class="typeahead-sandbox">
+    <div>
+        <label class="typeahead-sandbox__lb-select-values">Cities</label>
+        <ev-typeahead
+            v-model="cities"
+            :label-parse-attribute="cityName"
+            :value-parse-attribute="idCity"
+            @onLoadData="onLoadCities"
+        >
+        </ev-typeahead>
+    </div>
+    <div>
+        {{ consoleResult }}
+    </div>
+</div>

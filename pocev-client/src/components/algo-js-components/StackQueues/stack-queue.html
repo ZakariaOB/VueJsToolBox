@@ -1,0 +1,25 @@
+<div>
+    <div class="result">
+        <h5>Simple stack</h5>
+        <div class="result-content">{{ consoleTextSimpleStack }}</div>
+    </div>
+    <div class="result">
+        <h5>Peek stack</h5>
+        <div class="result-content">{{ consoleTextPeekStack }}</div>
+    </div>
+    <div class="result">
+        <h5>Pop stack</h5>
+        <div class="result-content">{{ consoleTextSimplePop }}</div>
+    </div>
+    <div class="result">
+        <h5>Enqueue Queue</h5>
+        <div class="result-content">{{ consoleTextEnqueueQueue }}</div>
+    </div>
+    <div class="result">
+        <h5>Dequeue intial {{ intialQueueToDequeue }}</h5>
+        <button type="button" @click="dequeue()" class="btn btn-primary btn-go">
+            DEQUEUE
+        </button>
+        <div class="result-content">{{ consoleTextDequeue }}</div>
+    </div>
+</div>

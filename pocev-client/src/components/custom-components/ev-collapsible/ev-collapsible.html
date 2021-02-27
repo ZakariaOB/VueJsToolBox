@@ -1,0 +1,32 @@
+<div class="collapsible">
+  <div
+    class="header"
+    data-toggle="collapse"
+    role="tab"
+    :data-target="collapseContentSelector"
+    aria-expanded="true"
+    :id="collapseHeaderId"
+    :class="{'is-collapsed': isCollapsed}"
+  >
+    <div class="header-content">
+      <slot name="header">
+        {{ title }}
+      </slot>
+    </div>
+    <div>
+      <span class="collapse-icon" :class="{ collapsed: isCollapsed }">
+        <i class="fa fa-chevron-right icon" aria-hidden="true"></i>
+      </span>
+    </div>
+  </div>
+  <div
+    class="collapsing-content collapse"
+    role="tabpanel"
+    :aria-labelledby="collapseHeaderId"
+    :id="collapseContentId"
+  >
+    <div class="collapsing-body"">
+      <slot></slot>
+    </div>
+  </div>
+</div>

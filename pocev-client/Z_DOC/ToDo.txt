@@ -1,0 +1,16 @@
+- The idea is to reproduce the Everest project toolbox and philosophy of custom components
+- Main components to reproduce 
+   - Element UI => Vue library
+   - Collapsing => OK 
+   - Loader
+   - Panels
+   - Sgs-typeahead
+   - Sgs-Tables
+   - Sgs-Forms
+   - PopUps
+   - Sgs-editable-list
+   - Sgs-Tables with details
+   - Drag and drop
+   - Download documents
+   - Vuex => Some store applications
+   - Check from the other ressources

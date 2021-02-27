@@ -1,0 +1,53 @@
+<div class="collapsibles">
+  <div class="collapisble-chk">
+    <ev-collapsible-chk :title="title">
+      <template v-slot:content>
+        <p>
+          Maintenant, tout a l’intérieur des éléments sera passé aux slots
+          correspondants. Tout contenu non inclu dans un utilisant v-slot est
+          considéré comme étant destiné au slot par défaut default. Cependant,
+          vous pouvez toujours entourer le contenu du slot par défaut dans un
+          si. ETC ...
+        </p>
+      </template>
+    </ev-collapsible-chk>
+  </div>
+  <div class="collapsible-ev">
+    <ev-collapsible
+      class="collapsible-ev-one"
+      title="Bootstrap collapsible"
+    ></ev-collapsible>
+    <collapsing
+      collapsed="false"
+      class="collapsible-ev-one"
+      title="Original collapsible"
+    >
+      <p>
+        Maintenant, tout a l’intérieur des éléments sera passé aux slots
+        correspondants. Tout contenu non inclu dans un utilisant v-slot est
+        considéré comme étant destiné au slot par défaut default. Cependant,
+        vous pouvez toujours entourer le contenu du slot par défaut dans un si.
+        ETC ...
+      </p>
+    </collapsing>
+    <ev-collapsible
+      collapsed="false"
+      class="collapsible-ev-two"
+      title="Custom header"
+    >
+      <template v-slot:header>
+        <div class="summary-line">
+          <div class="summary-line-name">
+            Zakaria Boukhris
+          </div>
+          <div class="summary-line-date">
+            10-10-2020
+          </div>
+          <div class="summary-line-value">
+            59
+          </div>
+        </div>
+      </template>
+    </ev-collapsible>
+  </div>
+</div>

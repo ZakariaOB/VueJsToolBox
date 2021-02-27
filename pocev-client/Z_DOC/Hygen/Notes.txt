@@ -1,0 +1,30 @@
+- Hygen is a templating engine
+
+- Great : https://www.ableneo.com/blog-detail/4bab25d99d8bid/how-to-use-the-hygen-code-generator
+
+- npx hygen init self
+    => Using npx so we execute the hygen templating once
+
+- hygen generator new --html new
+
+- npx hygen generator new --name component
+
+- npx hygen component new --name test-hygen --directory test-hygen
+
+==============================================================================
+SUMMARY
+==============================================================================
+In order to use hygen to generate templating :
+  - Generate a generator with action (This is internal and could be : help, new, with-prompt)
+     => npx hygen generator new --name 'Name it as you want here'
+     => npx hygen generator new --name component
+
+THE IDEA IS THAT HYGEN WILL USE ALL THE TEMPLATES UNDER A GENERATOR AND WILL PLACE THE
+PROVIDED ARGUMENTS COMING FROM THE COMMAND LINE TO GENERATE THE RIGHT FILES
+CORRECTLY IN THE RIGHT FOLDERS .
+
+     TEST example to generate test-hygen
+     => npx hygen component new --name test-hygen --directory test-hygen
+
+
+- npx here will just execute a command without installing the dependencies internally .

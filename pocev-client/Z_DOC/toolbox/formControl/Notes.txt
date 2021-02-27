@@ -1,0 +1,8 @@
+- When you execute a hygen genartor it will normally apply all the templates under the
+  generator / folder . For instance the :
+
+  npx hygen directive new --name sgs-form-control --directory form-validation
+
+  Will run : directive.esj.ts and ts.esj.t
+
+- npx hygen directive new --name ev-form-control --directory form-validation

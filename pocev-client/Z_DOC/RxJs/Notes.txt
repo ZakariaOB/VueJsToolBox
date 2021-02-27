@@ -1,0 +1,18 @@
+- Always avoid using logic inside the subscripbtions => The idea is to use operators as much as
+  possible .
+- $source => $ is used for observables .
+- To check types conversions on typescript
+- ShareReply : Share the result of a stream between different subscriptions
+- tap(): Side effect on our observable chain .
+
+- One idea with the concat operator is that it will never complete
+  if one of the chained observables has not completed .
+
+- Lecture 16+
+
+- Rx marbel diagram : https://rxmarbles.com/
+
+- MergeMap   : all observables merged could run in parallel
+  ConcatMap  : The current observable should complete before executing (subscribing) the next one
+  exhaustMap : Button example > No observable is considered before the completion of the current one
+               It will not be scheduled to run after completion of the previous on unlike ConcatMap
